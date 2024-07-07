@@ -1,0 +1,22 @@
+---
+import BentoGallery from "../components/BentoGallery.astro";
+import Hero from "../components/Hero.astro";
+import Reserve from "../components/Reserve.astro";
+import SocialProof from "../components/SocialProof.astro";
+import Layout from "../layouts/Layout.astro";
+import Menu from "../components/Menu.astro";
+import Testimonials from "../components/Testimonials.astro"
+---
+
+<Layout title="Welcome to Astro.">
+  <main slot="body">
+    <Hero />
+    <div class="container">
+      <SocialProof />
+	  <Reserve />
+	  <BentoGallery />
+	  <Menu />
+	  <Testimonials />
+    </div>
+  </main>
+</Layout>
