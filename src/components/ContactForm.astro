@@ -34,10 +34,23 @@
     align-self: flex-end;
     border: none;
     margin-top: var(--space-sm);
+    font-size: var(--text-sm);
+  }
+
+  .input-set {
+    gap: var(--space-xs);
+  }
+
+  label {
+    color: var(--black-75);
   }
   @media only screen and (min-width: 1000px) {
     form {
       max-width: 40%;
+    }
+    input,textarea {
+      font-size: var(--text-sm);
+    padding: 1.2rem 2rem;
     }
   }
 </style>
