@@ -1,5 +1,5 @@
 <section id="social-proof" class="flex-column align-center">
-  <h2>Welcome to [Restaurant Name]</h2>
+  <h2>Welcome to Lords Courtyard</h2>
   <div id="social-proof-set--container" class="flex-column">
     <div class="flex social-proof-set align-center justify-center">
       <img src="/chef-hat-1.svg" alt="" />
@@ -33,15 +33,22 @@
 
   .social-proof-set img {
     width: 5.8rem;
-    padding: 2.8rem;
-    border: 1px solid var(--secondary);
-    border-radius: 100rem;
+
   }
 
   @media only screen and (min-width:769px) {
+   #social-proof-set--container {
+    flex-direction: row;
+    justify-content: space-between;
+   }
+   
+    .social-proof-set {
+      flex-direction: column;
+      gap: var(--space-sm);
+    }
+    
     .social-proof-set img {
         width: 12rem;
-        padding: 6rem;
     }
 }
 
@@ -51,7 +58,6 @@
   }
     .social-proof-set img {
         width: 20rem;
-        padding: 10rem;
     }
   }
 </style>

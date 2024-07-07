@@ -5,12 +5,14 @@ import Image1 from "../assets/bento-1.png";
 import Image2 from "../assets/bento-2.png";
 import Image3 from "../assets/bento-3.png";
 import Image4 from "../assets/bento-4.png";
+import Image5 from "../assets/bento-5.png";
+import Image6 from "../assets/bento-6.png";
 ---
 
 <section id="gallery" class="flex-column relative">
   <img
     class="absolute bento-circle"
-    src="/bento-circle-secondary.svg"
+    src="/bento-circle-primary.svg"
     alt=""
     loading="lazy"
   />
@@ -50,10 +52,30 @@ import Image4 from "../assets/bento-4.png";
         loading="lazy"
         class="full-width"
       />
+      <div class="flex">
+        <Image
+          class="fifty-percent"
+          src={Image4}
+          alt=""
+          widths={[180, 360, 600]}
+          sizes={`(max-width: 360px) 180px, (max-width: 720px) 360px, 600px`}
+          decoding="async"
+          loading="lazy"
+        />
+        <Image
+          class="fifty-percent"
+          src={Image5}
+          alt=""
+          widths={[180, 360, 600]}
+          sizes={`(max-width: 360px) 180px, (max-width: 720px) 360px, 600px`}
+          decoding="async"
+          loading="lazy"
+        />
+      </div>
     </div>
     <Image
       class="fifty-percent"
-      src={Image4}
+      src={Image6}
       alt=""
       widths={[180, 360, 600]}
       sizes={`(max-width: 360px) 180px, (max-width: 720px) 360px, 600px`}
