@@ -83,11 +83,15 @@ import SocialMediaLinks from "./SocialMediaLinks.astro";
 
   #contact-info--container {
     margin: var(--space-md) 0;
-    justify-content: flex-end;
+    justify-content: space-between;
   }
 
   #contact-info {
     gap: var(--space-xs);
+  }
+
+  #logo {
+    max-width: 40%;
   }
 
   #logo path {
@@ -101,10 +105,16 @@ import SocialMediaLinks from "./SocialMediaLinks.astro";
       gap: var(--space-lg);
     }
 
+    #logo {
+      max-width: unset;
+    }
+
     #contact-info--container {
       flex-direction: column-reverse;
       gap: var(--space-md);
       margin: 0;
+      justify-content: flex-end;
+
     }
   }
 </style>
